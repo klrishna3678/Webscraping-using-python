@@ -1,0 +1,6 @@
+import requests
+import pandas
+from bs4 import BeautifulSoup
+response=requests.get("https://www.jiomart.com/")
+soup=BeautifulSoup(response.content,'html.parser')
+print(soup)
